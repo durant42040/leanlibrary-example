@@ -2,14 +2,11 @@ from leanlibrary import LeanAgent
 
 def main():
     url = "https://github.com/durant42040/lean4-example"
-    commit = "431b4a223095a5ea2d7d3761e6c50d14a87392c3"
+    commit = "7d55fefc8822c79c4fc800b3141ed24c5e9644c8"
 
     agent = LeanAgent()
 
     agent.process_repository(url, commit)
-
-    agent.train()
-    agent.evaluate()
     agent.prove()
 
 
